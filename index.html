@@ -136,10 +136,18 @@
 		    sound4.play()
                 }
             if (x+sWidth>=x2 && y+sHeight>=y2 && x2+s2Width>=x && y2+s2Height>=y){
-		    xSpeed2 = xSpeed2 * -1
-		    ySpeed2 = ySpeed2 * -1
-		    xSpeed = xSpeed * -1
-		    ySpeed = ySpeed * -1
+		    xm = -1
+		    ym = -1
+		    if(xSpeed2 == xSpeed){
+			    xm = 1
+		    }
+		    if(ySpeed2 == ySpeed){
+			    ym = 1
+		    }
+		    xSpeed2 = xSpeed2 * xm
+		    ySpeed2 = ySpeed2 * ym
+		    xSpeed = xSpeed * xm
+		    ySpeed = ySpeed * ym
 		    sound5.play()
 	    }
                 x2 = x2 + xSpeed2
