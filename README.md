@@ -1,4 +1,1 @@
-Reeves: we need to make the code more mobile friendly. I opened the website on my Galaxy S9 and it was slow and laggy.
-Reeves: Daniel thanks for trying we will work on it tomorrow. Just responded using README or if you would prefer to text my number is +17812908862. Also can you make the UwU moving images bounce off of each other. Finally leave the .mp3 file i. GitHub just in case i have time to work on it.
-DaniIl: ok I'll try to get them to bounce off each other
-Daniil: done but it's a bit weird so I'll see if I can make it less weird
+Visit pwease.tk to see the active website
