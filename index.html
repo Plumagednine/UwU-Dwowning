@@ -38,10 +38,10 @@
         document.body.innerHTML = document.body.innerHTML + "<div id='boinggg'><img id='img' src='https://pbs.twimg.com/media/DkLSFKGXoAACadZ.jpg' style='width:"+sWidth+";height:"+sHeight+";'></div><div id='boinggg2'><img id='img2' src='https://pbs.twimg.com/media/DkLSFKGXoAACadZ.jpg' style='width:"+sWidth+";height:"+sHeight+";'></div>"
         sq = document.getElementById("boinggg")
         sq2 = document.getElementById("boinggg2")
-        y=Math.floor(Math.random()*(Height-210))+105
-        x=Math.floor(Math.random()*(Width-210))+105
-        y2=Math.floor(Math.random()*(Height-210))+105
-        x2=Math.floor(Math.random()*(Width-210))+105
+        y=Math.floor(Math.random()*(Height-2*(sHeight+5)))+sHeight+5
+        x=Math.floor(Math.random()*(Width/2-2*(sWidth+5)))+sWidth+5
+        y2=Math.floor(Math.random()*(Height-2*(s2Height+5)))+s2Height+5
+        x2=Math.floor(Math.random()*(Width/2-2*(s2Width+5)))+s2Width+5+Width/2
 
         if(Math.floor(Math.random()*2) === 1){
             xSpeed = 1 * multiplier
