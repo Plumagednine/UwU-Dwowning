@@ -4,6 +4,16 @@
     </head>
     <body style='background-image: url("uwu.jpg")'>
         <script>
+	sound = new Audio('sound.mp3')
+	sound.loop = false
+	sound2 = new Audio('sound.mp3')
+	sound2.loop = false
+	sound3 = new Audio('sound.mp3')
+	sound3.loop = false
+	sound4 = new Audio('sound.mp3')
+	sound4.loop = false
+	sound5 = new Audio('sound.mp3')
+	sound5.loop = false
         function detectmob() {
          if( navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
@@ -77,36 +87,45 @@
             document.getElementById("img2").style="width:"+s2Width+";height:"+s2Height+";-webkit-transform: rotate("+deg2.toString()+"deg);-moz-transform: rotate("+deg2.toString()+"deg);-o-transform: rotate("+deg2.toString()+"deg);-ms-transform: rotate("+deg2.toString()+"deg);transform: rotate("+deg2.toString()+"deg);"
             if(x>= Width-sWidth){
                     xSpeed = xSpeed * -1
+		    sound.play()
                 }
             if (y>=Height-sHeight){
                     ySpeed = ySpeed * -1
+		    sound2.play()
                 }
             if (y<=0){
                     ySpeed = ySpeed * -1
+		    sound3.play()
                 }
             if (x<=0){
                     xSpeed = xSpeed * -1
+		    sound4.play()
                 }
                 x = x + xSpeed
                 y = y + ySpeed
 
             if(x2>= Width-s2Width){
                     xSpeed2 = xSpeed2 * -1
+		    sound.play()
                 }
             if (y2>=Height-s2Height){
                     ySpeed2 = ySpeed2 * -1
+		    sound2.play()
                 }
             if (y2<=0){
                     ySpeed2 = ySpeed2 * -1
+		    sound3.play()
                 }
             if (x2<=0){
                     xSpeed2 = xSpeed2 * -1
+		    sound4.play()
                 }
             if (x+sWidth>=x2 && y+sHeight>=y2 && x2+s2Width>=x && y2+s2Height>=y){
 		    xSpeed2 = xSpeed2 * -1
 		    ySpeed2 = ySpeed2 * -1
 		    xSpeed = xSpeed * -1
 		    ySpeed = ySpeed * -1
+		    sound5.play()
 	    }
                 x2 = x2 + xSpeed2
                 y2 = y2 + ySpeed2
