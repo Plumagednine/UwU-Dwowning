@@ -6,7 +6,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-143748438-1');
 </script>
 	    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -84,7 +83,6 @@
         x=Math.floor(Math.random()*(Width/2-2*(sWidth+5)))+sWidth+5
         y2=Math.floor(Math.random()*(Height-2*(s2Height+5)))+s2Height+5
         x2=Math.floor(Math.random()*(Width/2-2*(s2Width+5)))+s2Width+5+Width/2
-
         if(Math.floor(Math.random()*2) === 1){
             xSpeed = 1 * multiplier
         }
@@ -97,7 +95,6 @@
         else{
             ySpeed = -1 * multiplier
         }
-
         if(Math.floor(Math.random()*2) === 1){
             xSpeed2 = 1 * multiplier
         }
@@ -135,7 +132,6 @@
                 }
                 x = x + xSpeed
                 y = y + ySpeed
-
             if(x2>= Width-s2Width){
                     xSpeed2 = xSpeed2 * -1
 		    sound.play()
@@ -173,27 +169,24 @@
                 deg2 = deg2 + r2
                 setTimeout(loop,d)
         }
-		
 	function makemenormaluwu(){
 		document.body.style = "background-image: url('uwu.png');"
-	}
-		
+	}	
 	function makemegolduwu(){
 		document.body.style = "background-image: url('gold.png');"
 	}
-		
 	function makemedeepuwu(){
 		document.body.style = "background-image: url('deepfried.png');"
 	}
-		
 	function makemedeepgolduwu(){
 		document.body.style = "background-image: url('deepgold.png');"
 	}
-		
 	function makemeblueuwu(){
 		document.body.style = "background-image: url('bwue.png');"
 	}
-	
+	if(Math.floor(Math.random()*10)==5){
+		document.getElementById("img").innerHTML = document.getElementById("img").innerHTML + '<div style="z-index: 9999;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="ZQHTYSRRWMAQC" /><input type="hidden" name="currency_code" value="USD" /><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></form></div>'
+	}
         loop()
     </script>
 	    <div style="position:absolute;bottom:0;right:0;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="ZQHTYSRRWMAQC" /><input type="hidden" name="currency_code" value="USD" /><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></form></div>
