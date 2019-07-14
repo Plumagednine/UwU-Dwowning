@@ -6,6 +6,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'UA-143748438-1');
 </script>
 	    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -83,6 +84,7 @@
         x=Math.floor(Math.random()*(Width/2-2*(sWidth+5)))+sWidth+5
         y2=Math.floor(Math.random()*(Height-2*(s2Height+5)))+s2Height+5
         x2=Math.floor(Math.random()*(Width/2-2*(s2Width+5)))+s2Width+5+Width/2
+
         if(Math.floor(Math.random()*2) === 1){
             xSpeed = 1 * multiplier
         }
@@ -95,6 +97,7 @@
         else{
             ySpeed = -1 * multiplier
         }
+
         if(Math.floor(Math.random()*2) === 1){
             xSpeed2 = 1 * multiplier
         }
@@ -132,6 +135,7 @@
                 }
                 x = x + xSpeed
                 y = y + ySpeed
+
             if(x2>= Width-s2Width){
                     xSpeed2 = xSpeed2 * -1
 		    sound.play()
